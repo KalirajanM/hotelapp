@@ -19,11 +19,11 @@ const forceSSL = function() {
   // middleware
   app.use(forceSSL());
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/dist/hotetestapp'));
+app.use(express.static(__dirname + '/dist/hoteltestapp'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname, 'build','index.html'));
+res.sendFile(path.join(__dirname, '/dist/hoteltestapp/index.html'));
 });
 
 
