@@ -10,8 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "heroku-postbuild": "ng build --prod",
-    "client": "npm start --prefix client",
-    "clientinstall": "npm install --prefix client"
+
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
