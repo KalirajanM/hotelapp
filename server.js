@@ -23,7 +23,7 @@ app.use(express.static(__dirname + '/dist/<name-of-app>'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(`./front-end/dist/index.html`));
+res.sendFile(path.join(__dirname+'/dist/<name-of-app>/index.html'));
 });
 
 
