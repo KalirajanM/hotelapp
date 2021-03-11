@@ -1,0 +1,51 @@
+
+<!-- <div class="container">
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">@</span>
+  </div>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+</div> -->
+
+
+<div class="container ">
+
+    <div style="padding-top: 17%;    ">
+     <h4  style="text-align: center; font-size: 35px;" >Login</h4> 
+    <div class="row justify-content-center align-self-cent cardClass">
+    <div class="card col-4">
+      
+      <div class="card-body">
+        
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
+              <div class="form-group" >
+                  <label for="username">Username</label>
+                  <input type="text" formControlName="username" class="form-control"  />
+                  <!-- <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                      <div *ngIf="f.username.errors.required">Username is required</div>
+                  </div> -->
+              </div>
+              <div class="form-group ">
+                  <label for="password">Password</label>
+                  <input type="password" formControlName="password" class="form-control"  />
+                  <!-- <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                      <div *ngIf="f.password.errors.required">Password is required</div>
+                  </div> -->
+              </div>
+              <div class="form-group ">
+                  <button  class="btn btn-primary col-6">
+                      
+                      Login
+                  </button>
+                  <a routerLink="../register" class="btn btn-link">Register</a>
+              </div>
+          </form>
+     
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  
+  <router-outlet></router-outlet>
